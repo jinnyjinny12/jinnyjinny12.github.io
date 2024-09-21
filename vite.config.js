@@ -12,5 +12,13 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
-})
+  },
+  //배포예정
+  base:
+    process.env.NODE_ENV === "production"
+    ? "/" // 루트 경로에 배포
+    : "/",
+  build: {
+    outDir:"docs", // 빌드 결과물을 docs 폴더에 저장
+  },
+});
