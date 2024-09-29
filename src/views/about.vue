@@ -13,9 +13,9 @@
             <div class="about-title">About Me</div>
             <br />
             <ul class="about-list">
-              <li class="about-contents">주순태 | JOO SOON TAE</li>
-              <li class="about-contents">1992.09.25</li>
-              <li class="about-contents">항상 고민하고 방법을 찾는 개발자가 되겠습니다!</li>
+              <li class="about-contents">서은진 | SEO EUN JIN</li>
+              <li class="about-contents">1993.04.16</li>
+              <li class="about-contents">새로움을 찾아 도전하고 다양한 시각에서 소통하는 개발자가 되겠습니다!</li>
             </ul>
           </div>
           <div class="education-info animate__animated animate__fadeInUp">
@@ -23,8 +23,8 @@
             <br />
             <ul class="about-list">
               <li class="about-contents">2024.10 | 하이미디어아카데미 클라우드 기반의 자바 풀스택 수료</li>
-              <li class="about-contents">2024.02 | 숭실사이버대학교 건설시스템공학과 졸업</li>
-              <li class="about-contents">2011.02 | 서울 대원고등학교 졸업</li>
+              <li class="about-contents">2019.08 | 경희대학교 국어국문/경영학 졸업</li>
+              <li class="about-contents">2011.02 | 서울 휘경여자고등학교 졸업</li>
             </ul>
           </div>
         </div>
@@ -32,6 +32,7 @@
         <div class="profile-section animate__animated animate__fadeInUp">
           <div class="characters">
             <div class="about-title">Characters</div>
+           
             <br />
             <!-- TagCanvas 적용할 위치 -->
             <div class="canvas-container">
@@ -41,20 +42,16 @@
                   <li><a href="#">논리적인</a></li>
                   <li><a href="#">문제해결능력</a></li>
                   <li><a href="#">팀워크</a></li>
-                  <li><a href="#">분석적인</a></li>
-                  <li><a href="#">효율적인</a></li>
+                  <li><a href="#">소통하는</a></li>
                   <li><a href="#">책임감</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div class="contributions animate__animated animate__fadeInUp">
-            <div class="about-title">Contributions</div>
-            <img
-              class="github-stats"
-              :src="`https://github-readme-stats.vercel.app/api?username=${githubId}&theme=dark&show_icons=true`"
-              alt="GitHub Stats"
-            />
+            <div class="about-title">Career</div>
+          
+       
           </div>
         </div>
       </div>
@@ -73,7 +70,7 @@
 
 <script setup>
 import { onMounted } from "vue";
-const githubId = "Stjoo0925"; // 여기에 깃허브 아이디를 입력합니다.
+const githubId = "jinnyjinny12"; // 여기에 깃허브 아이디를 입력합니다.
 let timeoutId = null;
 
 onMounted(() => {
