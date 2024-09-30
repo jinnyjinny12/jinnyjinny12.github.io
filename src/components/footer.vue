@@ -1,6 +1,6 @@
 <template>
   <footer class="footer-container">
-    <div class="footer-content">© 2024 JooSoonTae. All Rights Reserved.</div>
+    <div class="footer-content">© 2024 SeoEunJin. All Rights Reserved.</div>
   </footer>
 </template>
 

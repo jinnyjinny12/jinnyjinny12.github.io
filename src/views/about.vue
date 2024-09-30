@@ -49,7 +49,17 @@
             </div>
           </div>
           <div class="contributions animate__animated animate__fadeInUp">
-            <div class="about-title">Career</div>
+            <div class="about-title">Experience</div>
+
+            <ul class="about-list">
+              <br>
+              
+              <li class="about-contents"> 모바일 앱 서비스 기획 경험</li>
+              <li class="about-contents"> 러시아 앱 서비스 고도화 및 어드민 개편 경험</li>
+              <li class="about-contents"> 상품별 데이터 분석 을 통해 프로모션 기획 및 운영 경험</li>
+              <li class="about-contents"> GA, Tableau 를 바탕으로 데이터 분석 및 트래킹 경험</li>
+            
+            </ul>
           
        
           </div>
