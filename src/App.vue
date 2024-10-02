@@ -16,6 +16,7 @@ const currentPageIndex = ref(pages.indexOf(route.path));
 if (currentPageIndex.value === -1) {
   router.push(pages[0]); // 기본 경로로 이동
 }
+// 변경합니다
 
 // 라우트 경로 변화 감지 후 인덱스 업데이트
 watch(
