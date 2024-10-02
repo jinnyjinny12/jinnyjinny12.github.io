@@ -11,6 +11,7 @@ const routes = [
   { path: "/contact", component: Contact, meta: { transition: "fade" } },
 ];
 
+// 수정내용
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes,
