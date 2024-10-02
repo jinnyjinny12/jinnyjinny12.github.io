@@ -1,80 +1,88 @@
-<script setup>
-import { useRouter } from "vue-router";
-const router = useRouter();
-const navigateTo = (path) => {
-  router.push(path);
-};
-</script>
+<script setup></script>
 
 <template>
   <div class="portfolio-container portfolio-container-scrollable">
     <div class="title-container">
       <div class="title">포트폴리오</div>
       <hr class="title-line" />
-      <div class="scription">작업한 프로젝트 현황</div>
+      <div class="scription">작업한 프로젝트 현황입니다.</div>
     </div>
-    <div class="portfolio-grid animate__animated animate__fadeInUp">
-      <!-- 첫 번째 프로젝트 카드 -->
-      <div class="portfolio-card" @click="navigateTo('/portfolio/kiosk')">
-        <!-- 기술 뱃지를 카드 내용의 위로 이동 -->
-        <div class="portfolio-badges">
-          <span class="badge">Vue.js</span>
-          <span class="badge">Pinia</span>
-          <span class="badge">Axios</span>
-          <span class="badge">Json-server</span>
+    <div class="portfolio-silde">
+      <!-- 자동 슬라이드 기능을 추가 -->
+      <div
+        id="carouselExampleCaptions"
+        class="carousel slide"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
         </div>
-        <img
-          src="@/assets/images/background/Sample.png"
-          alt="Vue.js Project"
-          class="portfolio-image"
-        />
-        <div class="portfolio-info">
-          <h5>Vue.js Project</h5>
-          <p>Vue.js를 이용한 햄버거 키오스크 프로젝트</p>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="\sample_thumbnail.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>First slide label</h5>
+              <p>
+                Some representative placeholder content for the first slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="\sample_thumbnail.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Second slide label</h5>
+              <p>
+                Some representative placeholder content for the second slide.
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="\sample_thumbnail.jpg" class="d-block w-100" alt="..." />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Third slide label</h5>
+              <p>
+                Some representative placeholder content for the third slide.
+              </p>
+            </div>
+          </div>
         </div>
-      </div>
-      <!-- 두 번째 프로젝트 카드 -->
-      <div class="portfolio-card" @click="navigateTo('/portfolio/flux')">
-        <!-- 기술 뱃지를 추가하고 카드 내용의 위로 이동 -->
-        <div class="portfolio-badges">
-          <span class="badge">Spring</span>
-          <span class="badge">Vue.js</span>
-          <span class="badge">MySQL</span>
-          <span class="badge">JPA</span>
-        </div>
-        <img
-          src="@/assets/images/background/Sample.png"
-          alt="Flux project"
-          class="portfolio-image"
-        />
-        <div class="portfolio-info">
-          <h5>Flux Project</h5>
-          <p>
-            스프링프레임워크와 뷰프레임워크를 이용한 전자상거래 플랫폼 프로젝트
-          </p>
-        </div>
-      </div>
-      <!-- 세 번째 프로젝트 카드 -->
-      <div class="portfolio-card" @click="navigateTo('/portfolio/leafresh')">
-        <!-- 기술 뱃지를 추가하고 카드 내용의 위로 이동 -->
-        <div class="portfolio-badges">
-          <span class="badge">Spring</span>
-          <span class="badge">Vue.js</span>
-          <span class="badge">MySQL</span>
-          <span class="badge">JPA</span>
-        </div>
-        <img
-          src="@/assets/images/background/Sample.png"
-          alt="Leafresh project"
-          class="portfolio-image"
-        />
-        <div class="portfolio-info">
-          <h5>Leafresh Project</h5>
-          <p>
-            스프링프레임워크와 뷰프레임워크를 이용한 SNS 스타일의 원예일지
-            플랫폼 프로젝트
-          </p>
-        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
       </div>
     </div>
   </div>
@@ -86,254 +94,57 @@ const navigateTo = (path) => {
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   overflow: hidden;
-  padding: 50px;
+  padding: 20px;
   box-sizing: border-box;
-  background-color: var(--main-bg-color);
+  max-height: 100vh;
 }
 
 .portfolio-container-scrollable {
-  overflow-y: auto;
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+  overflow-y: auto; /* 세로 스크롤 가능 */
+  -ms-overflow-style: none; /* IE와 Edge에서 스크롤바 숨기기 */
+  scrollbar-width: none; /* Firefox에서 스크롤바 숨기기 */
 }
 
 .portfolio-container-scrollable::-webkit-scrollbar {
-  display: none;
+  display: none; /* Chrome, Safari에서 스크롤바 숨기기 */
 }
 
 .title-container {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   font-family: "goorm-sans-bold";
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
   color: var(--font-color2);
-  text-shadow: 
-    1px 1px 0 black, 
-    -1px 1px 0 black, 
-    1px -1px 0 black, 
-    -1px -1px 0 black;
 }
 
 .title-line {
   width: 100px;
   height: 2px;
-  background-color: black;
+  background-color: var(--font-color2);
   border: none;
-  margin: 10px auto;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
 
 .scription {
   font-family: "goorm-sans-bold";
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
   color: var(--font-color2);
-  text-shadow: 
-    1px 1px 0 black, 
-    -1px 1px 0 black, 
-    1px -1px 0 black, 
-    -1px -1px 0 black;
 }
 
-/* 포트폴리오 그리드 스타일 */
-.portfolio-grid {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.portfolio-card {
-  position: relative; /* 상대 위치 설정 */
-  width: 300px;
-  background-color: var(--header-footer-color);
-  border: 3px solid var(--secondary-highlight-color);
-  border-radius: 10px;
-  overflow: visible; /* 뱃지가 카드 밖으로 나올 수 있도록 */
-  cursor: pointer;
-  transition: transform 0.3s;
-}
-
-.portfolio-card:hover {
-  transform: translateY(-10px);
-}
-
-.portfolio-image {
+.portfolio-silde {
+  max-width: 1000px;
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 5px;
-}
-
-.portfolio-info {
-  min-height: 130px;
-  padding: 15px;
-}
-
-.portfolio-info h5 {
-  font-family: "goorm-sans-bold";
-  font-size: 1.5rem;
-  color: var(--font-color);
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.portfolio-info p {
-  font-family: "goorm-sans-code";
-  font-size: 0.8rem;
-  color: var(--font-color);
-  line-height: 1.4;
-}
-
-/* 기술 뱃지 스타일 */
-.portfolio-badges {
-  display: none; /* 기본적으로 숨김 처리 */
-  position: absolute;
-  top: -60px; /* 카드 위로 배치 */
-  left: 50%;
-  transform: translateX(-50%);
-  padding: 5px;
-  text-align: center;
-  z-index: 1;
-}
-
-.badge {
-  display: inline-block;
-  background-color: var(--header-footer-color);
-  color: var(--font-color);
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin: 5px 5px 0 0;
-  font-size: 0.8rem;
-}
-
-/* 카드 호버 시 기술 뱃지 표시 및 애니메이션 효과 */
-.portfolio-card:hover .portfolio-badges {
-  display: flex;
-  flex-direction: row;
-  animation: fadeInDown 0.3s ease forwards;
-}
-
-/* 애니메이션 키프레임 */
-@keyframes fadeInDown {
-  from {
-    opacity: 0;
-    transform: translate(-50%, -10px); /* 위쪽에서 시작 */
-  }
-  to {
-    opacity: 1;
-    transform: translate(-50%, 0); /* 원래 위치 */
-  }
-}
-
-@media (max-width: 768px) {
-  .portfolio-grid {
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
-    justify-content: flex-start;
-  }
-
-  .portfolio-card {
-    width: 90%;
-    max-width: 350px;
-    height: auto;
-    background-color: var(--header-footer-color);
-    border-radius: 10px;
-    cursor: pointer;
-    transition: transform 0.3s;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-
-  .portfolio-image {
-    width: 100%;
-    height: auto;
-    max-height: 180px;
-    object-fit: cover;
-  }
-
-  .portfolio-info {
-    padding: 10px;
-    min-height: 0 !important;
-  }
-
-  .portfolio-info h5 {
-    font-size: 1.2rem;
-    margin: 0 !important;
-  }
-
-  .portfolio-info p {
-    display: none;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .title-line {
-    width: 80px;
-  }
-
-  .scription {
-    font-size: 0.9rem;
-  }
-
-  /* 모바일에서 기술 뱃지 숨기기 */
-  .portfolio-badges {
-    display: none !important;
-  }
-}
-
-/* 화면이 480px 이하일 때 적용 */
-@media (max-width: 480px) {
-  .portfolio-card {
-    width: 100%;
-    max-width: 100%;
-    margin: 0 10px;
-  }
-
-  .portfolio-image {
-    max-height: 150px;
-  }
-
-  .portfolio-info {
-    padding: 10px;
-    min-height: 0 !important;
-  }
-
-  .portfolio-info h5 {
-    font-size: 1rem;
-    margin: 0 !important;
-  }
-
-  .portfolio-info p {
-    display: none;
-  }
-
-  .title {
-    font-size: 1.5rem;
-  }
-
-  .title-line {
-    width: 60px;
-  }
-
-  .scription {
-    font-size: 0.8rem;
-  }
-
-  /* 모바일에서 기술 뱃지 숨기기 */
-  .portfolio-badges {
-    display: none !important;
-  }
+  height: auto;
 }
 </style>
