@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from "vue";
 
-import Gmail from "@/assets/images/mail.png";
+import Gmail from "@/assets/images/gmail.svg";
 import Github from "@/assets/images/Github.svg";
 
 // 연락처 정보와 소셜 링크
