@@ -225,7 +225,7 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--portfolio-bg-color);
+  /* background-color: var(--portfolio-bg-color); */
 }
 
 .flux-project-container-scrollable {
