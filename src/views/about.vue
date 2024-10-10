@@ -69,13 +69,16 @@
       <div class="github-contributions animate__animated animate__fadeInUp">
         <div class="contributions-container">
           <img
-            :src="`https://ghchart.rshah.org/0d0d0d/${githubId}`"
+            :src="`https://ghchart.rshah.org/${githubId}`"
             alt="GitHub Contributions Graph"
+            class="github-chart"
           />
-        </div>
-      </div>
     </div>
   </div>
+    </div>
+  </div>
+
+  
 </template>
 
 <script setup>
@@ -347,5 +350,21 @@ h3 {
   .about-contents {
     font-size: 12px; /* 내용 글자 크기 축소 */
   }
+}
+
+.github-contributions {
+  /* Github chart를 담고 있는 container */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+.github-chart {
+  width: 100%;
+  height: auto;
+  filter: grayscale(30%) contrast(1.5) brightness(1.2) saturate(1.5) sepia(60%) hue-rotate(-20deg);
+  transition: filter 0.3s ease-in-out;
 }
 </style>
