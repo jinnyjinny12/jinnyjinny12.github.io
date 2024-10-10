@@ -51,36 +51,7 @@ const hoverIcon = (icon) => {
           </p>
         </div>
 
-        <!-- 소셜 아이콘 -->
-        <div class="social-icons animate__animated animate__backInUp">
-          <a
-            :href="contactInfo.socialLinks.gmail"
-            target="_blank"
-            class="social-icon"
-            @mouseover="hoverIcon('gmail')"
-            @mouseleave="hoverIcon('')"
-            :class="{
-              'animate__animated animate__rubberBand': activeIcon === 'gmail',
-            }"
-          >
-            <img :src="contactInfo.socialIcons.gmail" />
-            <p>Gmail</p>
-          </a>
-          <a
-            :href="contactInfo.socialLinks.github"
-            target="_blank"
-            class="social-icon"
-            @mouseover="hoverIcon('github')"
-            @mouseleave="hoverIcon('')"
-            :class="{
-              'animate__animated animate__rubberBand': activeIcon === 'github',
-            }"
-          >
-            <img :src="contactInfo.socialIcons.github" />
-            <p>Github</p>
-          </a>
-          
-        </div>
+        
       </div>
     </div>
   </div>

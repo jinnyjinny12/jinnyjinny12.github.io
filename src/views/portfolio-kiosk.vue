@@ -58,14 +58,14 @@ onUnmounted(() => {
     <!-- 아이콘 링크 영역 -->
     <div class="project-links">
       <a
-        href="https://github.com/Stjoo0925/Vue-project"
+        href="https://github.com/jinnyjinny12/kioks_final_renewal"
         target="_blank"
         aria-label="GitHub"
       >
         <img src="@/assets/images/project-github.svg" alt="Github Logo" class="logo" />
       </a>
       <a
-        href="https://burgerkiosk.vercel.app/"
+        href="https://kioks-final-renewal.vercel.app/"
         target="_blank"
         aria-label="Vercel"
       >
@@ -88,16 +88,14 @@ onUnmounted(() => {
     <section class="project-tech-stack">
       <h2 class="section-title">기여 내역</h2>
       <ul class="tech-stack-list">
-        <li>페이지 디자인 및 상태관리 & Api통신 파트 담당</li>
+        <li>페이지 디자인 및 상태관리 </li>
         <li>24.05.28 : Footer 레이아웃 완성</li>
         <li>24.05.29 : 메인메뉴 레이아웃 완성</li>
-        <li>24.05.30 : 리드미 이미지 추가</li>
         <li>24.05.31 : json data 추가</li>
         <li>24.06.05 : Vue 메인메뉴 파트 변환 및 기능 완성</li>
         <li>24.06.06 : 메인메뉴 기능 추가 및 CSS 작업</li>
         <li>24.06.07 : 메인메뉴 기능 완성</li>
-        <li>24.06.09 : 디렉토리 정리 및 코드 정리</li>
-        <li>24.09.22 : 배포버전을 위한 로컬데이터로 변환</li>
+        <li>24.10.10 : 배포버전을 위한 로컬데이터로 변환</li>
       </ul>
     </section>
 
@@ -107,7 +105,6 @@ onUnmounted(() => {
       <ul class="feature-list">
         <li>메뉴 선택 및 주문 기능</li>
         <li>실시간 주문 내역 확인 및 수정</li>
-        <li>다양한 세트 메뉴 구성 옵션</li>
         <li>장바구니 기능을 통한 주문 편의성 제공</li>
       </ul>
     </section>
@@ -118,7 +115,7 @@ onUnmounted(() => {
       <ul class="tech-stack-list">
         <li>Vue.js - 프론트엔드 프레임워크</li>
         <li>Pinia - 상태 관리</li>
-        <li>Axios - API 통신</li>
+    
       </ul>
     </section>
 
@@ -142,7 +139,7 @@ onUnmounted(() => {
         </div>
         <div class="image-item">
           <img
-            src="@/assets/images/vue-project/kiosk-payment.png"
+            src="@/assets/images/vue-project/kiosk-pay.png"
             alt="키오스크 결제 화면"
           />
           <p>결제 화면</p>

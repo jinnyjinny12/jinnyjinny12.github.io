@@ -44,10 +44,10 @@ onUnmounted(() => {
   <div ref="containerRef" class="flux-project-container flux-project-container-scrollable">
     <!-- 제목 영역 -->
     <div class="title-container">
-      <h1 class="project-title">Flux 프로젝트</h1>
+      <h1 class="project-title">Pikka 프로젝트</h1>
       <hr class="title-line" />
       <p class="project-subtitle">
-        Spring Boot & Vue.js를 이용한 전자상거래 플랫폼
+        Spring Boot & Vue.js를 이용한 채용 커뮤니티 플랫폼
       </p>
     </div>
 
@@ -61,11 +61,11 @@ onUnmounted(() => {
 
     <!-- 아이콘 링크 영역 -->
     <div class="project-links">
-      <a href="https://github.com/Flux2024" target="_blank" aria-label="GitHub">
+      <a href="https://github.com/codingpikka" target="_blank" aria-label="GitHub">
         <img src="@/assets/images/project-github.svg" alt="GitHub Logo" class="logo" />
       </a>
       <a
-        href="https://flux-front-server.vercel.app/"
+        href="https://pikka-front-server2.vercel.app/#/"
         target="_blank"
         aria-label="Live Site"
       >
@@ -81,13 +81,13 @@ onUnmounted(() => {
     <section class="project-overview">
       <h2 class="section-title">프로젝트 소개</h2>
       <p class="section-description">
-        본 프로젝트는 최신 웹 기술을 활용하여 온라인 경매 웹 애플리케이션을
+        본 프로젝트는 오픈 API를 활용하여 잡카페, 채용정보, 커뮤니티를 제공하는 웹 애플리케이션을
         개발하는 것을 목표로 합니다.<br /><br />
         백엔드는 안정성과 확장성을 갖춘 Spring 프레임워크를 활용하여
         구현되었으며,<br />
         프론트엔드는 사용자 친화적인 Vue.js 프레임워크를 사용하여
         구축되었습니다.<br /><br />
-        이를 통해 사용자에게 매끄러운 경매 경험을 제공하는 것을 목표로
+        이를 통해 사용자에게 유용한 정보를 제공해 편리성을 제고하는 것을 목표로
         합니다.<br /><br />
         목표기간 : 2024.07.15 ~ 08.07(기간연장 08.16)
       </p>
@@ -97,7 +97,9 @@ onUnmounted(() => {
     <section class="project-contributions">
       <h2 class="section-title">기여 내역</h2>
       <ul class="contributions-list">
-        <li>Github Organizations구축 및 프로젝트 위키 작성</li>
+        <li>프로젝트 전체 기획 및 매니징</li>
+        <li>Github Organizations구축 및 깃허브 전략 도입</li>
+        <li>어드민, 사용자 화면 전체 설계 및 구축</li>
         <li>프로젝트 설계 및 CI/CD 파이프라인 구축</li>
         <li>백엔드 API 개발 및 REST 설계</li>
         <li>프론트엔드 페이지 디자인 및 상태 관리 구현</li>
@@ -109,26 +111,20 @@ onUnmounted(() => {
       <h2 class="section-title">주요 기능</h2>
       <p class="section-description">-사용자페이지-</p>
       <ul class="feature-list">
-        <li>상품판매 및 등록기능</li>
-        <li>상품 상세보기 기능</li>
-        <li>소셜 로그인 기능</li>
-        <li>아티클 상세보기 기능</li>
-        <li>랭킹 기능</li>
+    
+        <li>글쓰기 및 상세보기 기능</li>
+        <li>공지사항 기능</li>
         <li>마이페이지 기능</li>
+        <li>공공 데이터 조회 기능</li>
+
       </ul>
       <p class="section-description">-관리자페이지-</p>
       <ul class="feature-list">
-        <li>회원 목록 조회 기능</li>
-        <li>회원 권한 조정 기능</li>
+        <li>공공 데이터 DB 저장 및 업데이트 기능</li>
+        <li>Q&A 및 문의하기 기능</li>
         <li>공지사항 등록 기능</li>
-        <li>아티클 등록 기능</li>
+        <li>큐레이션 정보 선택 및 등록 기능</li>
       </ul>
-    </section>
-
-    <!-- 사용 기술 영역 -->
-    <section class="project-tech-stack">
-      <h2 class="section-title">사용 기술</h2>
-      <img src="@/assets/images/flux-project/flux-stack.png" />
     </section>
 
     <!-- 프로젝트 이미지 영역 -->
@@ -137,21 +133,21 @@ onUnmounted(() => {
       <div class="image-gallery">
         <div class="image-item">
           <img
-            src="@/assets/images/flux-project/flux-main.png"
-            alt="메인 페이지"
+            src="@/assets/images/pikka-project/pikka-jobcafe.png"
+            alt="잡 카페 페이지"
           />
-          <p>메인 페이지</p>
+          <p>잡카페정보 페이지</p>
         </div>
         <div class="image-item">
           <img
-            src="@/assets/images/flux-project/flux-login.png"
-            alt="로그인 페이지"
+            src="@/assets/images/pikka-project/pikka-curation.png"
+            alt="큐레이션 페이지"
           />
-          <p>로그인 페이지</p>
+          <p>큐레이션 페이지</p>
         </div>
         <div class="image-item">
           <img
-            src="@/assets/images/flux-project/flux-announcement.png"
+           src="@/assets/images/pikka-project/pikka-notice.png"
             alt="공지사항 페이지"
           />
           <p>공지사항 페이지</p>
@@ -337,7 +333,7 @@ onUnmounted(() => {
   top: 20px;
   right: 20px;
   padding: 10px 15px;
-  background-color: var(--secondary-highlight-color);
+  background-color: var(#FFD7C4);
   color: var(--font-color);
   border: none;
   border-radius: 5px;

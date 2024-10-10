@@ -119,11 +119,10 @@ onUnmounted(() => {
     <section class="project-contributions">
       <h2 class="section-title">기여 내역</h2>
       <ul class="contributions-list">
-        <li>Github Organizations구축 및 프로젝트 위키 작성</li>
-        <li>프로젝트 설계 및 CI/CD 파이프라인 구축</li>
-        <li>백엔드 DNS설정 및 SSL인증서 적용</li>
+        <li>프로젝트 기획 및 전체 화면 구현</li>
+        <li>전체 프로젝트 일정관리 및 IA, 와이어프레임 작성</li>
+        <li>캘린더,유저정보 식별을 통한 원예일지 다이어리 기능</li>
         <li>백엔드 API 개발 및 REST 설계</li>
-        <li>오픈API를 이용한 지역별 날씨조회 기능</li>
         <li>프론트엔드 페이지 디자인 및 상태 관리 구현</li>
       </ul>
     </section>
@@ -225,7 +224,7 @@ onUnmounted(() => {
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  /* background-color: var(--portfolio-bg-color); */
+  background-color: var(--portfolio-bg-color);
 }
 
 .flux-project-container-scrollable {

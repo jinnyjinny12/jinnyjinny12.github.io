@@ -24,13 +24,13 @@ const navigateTo = (path) => {
           <span class="badge">Json-server</span>
         </div>
         <img
-          src="@/assets/images/background/Sample.png"
+          src="@/assets/images/background/cafe.png"
           alt="Vue.js Project"
           class="portfolio-image"
         />
         <div class="portfolio-info">
           <h5>Vue.js Project</h5>
-          <p>Vue.js를 이용한 햄버거 키오스크 프로젝트</p>
+          <p>Vue.js를 이용한 커피 키오스크 프로젝트</p>
         </div>
       </div>
       <!-- 두 번째 프로젝트 카드 -->
@@ -43,14 +43,14 @@ const navigateTo = (path) => {
           <span class="badge">JPA</span>
         </div>
         <img
-          src="@/assets/images/background/Sample.png"
-          alt="Flux project"
+          src="@/assets/images/background/pikka.png"
+          alt="pikka project"
           class="portfolio-image"
         />
         <div class="portfolio-info">
           <h5>Flux Project</h5>
           <p>
-            스프링프레임워크와 뷰프레임워크를 이용한 전자상거래 플랫폼 프로젝트
+            스프링프레임워크와 뷰프레임워크를 이용한 채용 플랫폼 프로젝트
           </p>
         </div>
       </div>
@@ -64,7 +64,7 @@ const navigateTo = (path) => {
           <span class="badge">JPA</span>
         </div>
         <img
-          src="@/assets/images/background/Sample.png"
+          src="@/assets/images/background/leafresh.png"
           alt="Leafresh project"
           class="portfolio-image"
         />
