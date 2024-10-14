@@ -48,7 +48,7 @@ const navigateTo = (path) => {
           class="portfolio-image"
         />
         <div class="portfolio-info">
-          <h5>Flux Project</h5>
+          <h5>채용 플랫폼 Project</h5>
           <p>
             스프링프레임워크와 뷰프레임워크를 이용한 채용 플랫폼 프로젝트
           </p>
@@ -111,13 +111,10 @@ const navigateTo = (path) => {
 
 .title {
   font-family: "goorm-sans-bold";
-  font-size: 2rem;
+  font-size: 1.8rem;
+  margin-bottom: 5px;
   color: var(--font-color2);
-  text-shadow: 
-    1px 1px 0 black, 
-    -1px 1px 0 black, 
-    1px -1px 0 black, 
-    -1px -1px 0 black;
+
 }
 
 .title-line {
@@ -130,13 +127,9 @@ const navigateTo = (path) => {
 
 .scription {
   font-family: "goorm-sans-bold";
-  font-size: 1rem;
+  font-size: 0.8rem;
+  margin-bottom: 5px;
   color: var(--font-color2);
-  text-shadow: 
-    1px 1px 0 black, 
-    -1px 1px 0 black, 
-    1px -1px 0 black, 
-    -1px -1px 0 black;
 }
 
 /* 포트폴리오 그리드 스타일 */

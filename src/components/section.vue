@@ -20,7 +20,7 @@ import { RouterView } from "vue-router";
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  padding: 35px;
+  padding: 25px;
   box-sizing: border-box;
 }
 
