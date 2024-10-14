@@ -13,6 +13,7 @@ import Git from "@/assets/images/Git.svg";
 import Github from "@/assets/images/Github-Light.svg";
 import Docker from "@/assets/images/Docker.svg";
 import Jenkins from "@/assets/images/Jenkins-Light.svg";
+import Flutter from "@/assets/images/flutter.svg"
 
 const techStack = reactive([
   {
@@ -75,6 +76,11 @@ const techStack = reactive([
     name: "GitHub",
     logo: Github,
     description: "Collaboration",
+  },
+  {
+    name: "Flutter",
+    logo: Flutter,
+    description: "App development",
   },
 ]);
 </script>

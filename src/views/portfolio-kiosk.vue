@@ -89,13 +89,10 @@ onUnmounted(() => {
       <h2 class="section-title">기여 내역</h2>
       <ul class="tech-stack-list">
         <li>페이지 디자인 및 상태관리 </li>
-        <li>24.05.28 : Footer 레이아웃 완성</li>
-        <li>24.05.29 : 메인메뉴 레이아웃 완성</li>
-        <li>24.05.31 : json data 추가</li>
-        <li>24.06.05 : Vue 메인메뉴 파트 변환 및 기능 완성</li>
-        <li>24.06.06 : 메인메뉴 기능 추가 및 CSS 작업</li>
-        <li>24.06.07 : 메인메뉴 기능 완성</li>
-        <li>24.10.10 : 배포버전을 위한 로컬데이터로 변환</li>
+        <li>Footer, Header 공통 컴포넌트 레이아웃 완성</li>
+        <li>메인메뉴 레이아웃 및 장바구니</li>
+        <li>json data 추가</li>
+        <li>배포버전을 위한 로컬데이터로 변환</li>
       </ul>
     </section>
 
