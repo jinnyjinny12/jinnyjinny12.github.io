@@ -13,7 +13,8 @@ import Git from "@/assets/images/Git.svg";
 import Github from "@/assets/images/Github-Light.svg";
 import Docker from "@/assets/images/Docker.svg";
 import Jenkins from "@/assets/images/Jenkins-Light.svg";
-import Flutter from "@/assets/images/flutter.svg"
+import Flutter from "@/assets/images/Flutter1.svg"
+import React from "@/assets/images/React2.svg"
 
 const techStack = reactive([
   {
@@ -54,6 +55,11 @@ const techStack = reactive([
   {
     name: "Vue.js",
     logo: Vue,
+    description: "Front-end Framework",
+  },
+  {
+    name: "React.js",
+    logo: React,
     description: "Front-end Framework",
   },
   {
@@ -167,7 +173,7 @@ p {
 
 .tech-card-container {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   padding: 20px;
   justify-items: center;
